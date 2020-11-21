@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html, body{
+    padding: 2rem;
+}
+.form-container{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin:auto;
+    font-size: 1.2rem;
+}
+.name-container,
+.contact-container,
+.birthday-container,
+.password-container,
+.submit-container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex:1;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.name-container input,
+.contact-container input,
+.birthday-container input,
+.password-container input{
+    padding: .8rem;
+    font-size: 1.1rem;
+    margin:.5rem ;
+    outline: none;
+}
+.name-container input,
+.password-container input{
+    flex: 1;
+}
+.contact-container,
+.birthday-container,
+.submit-container{
+    flex-direction: column;
+}
+.submit-container{
+    margin: 3rem 1rem;
+}
+.submit-container button{
+    padding: 10px 15px;
+    margin-top: 1rem;
+    background-color: red;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.submit-container a:visited{
+    color: darkred;
+}
+.submit-container a:link{
+    color: red;
+}
