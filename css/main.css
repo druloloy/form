@@ -5,7 +5,9 @@
 }
 html, body{
     padding: 2rem;
+    width:100%;
 }
+
 .form-container{
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -14,6 +16,9 @@ html, body{
     margin:auto;
     font-size: 1.2rem;
 }
+h1{
+    color: red;
+}
 .name-container,
 .contact-container,
 .birthday-container,
@@ -21,9 +26,9 @@ html, body{
 .submit-container{
     width: 100%;
     display: flex;
-    margin: auto;
+    margin: 2rem auto;
     flex:1;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 .name-container input,
@@ -32,8 +37,8 @@ html, body{
 .password-container input{
     padding: .8rem;
     font-size: 1.1rem;
-    margin:.5rem;
     outline: none;
+    margin: 1rem;
     max-width: 100%;
 }
 .name-container input,
@@ -46,7 +51,7 @@ html, body{
     flex-direction: column;
 }
 .submit-container{
-    margin: 3rem 1rem;
+    margin: 5rem 0;
 }
 .submit-container button{
     padding: 10px 15px;
@@ -63,4 +68,12 @@ html, body{
 }
 .submit-container a:link{
     color: red;
+}
+@media screen and (max-width: 650px){
+    html,body{
+        padding: .5rem;
+    }
+    .form-container{
+        width: 100%;
+    }
 }
