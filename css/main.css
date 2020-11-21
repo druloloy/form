@@ -23,7 +23,7 @@ html, body{
     display: flex;
     margin: auto;
     flex:1;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     flex-direction: row;
 }
 .name-container input,
@@ -32,8 +32,9 @@ html, body{
 .password-container input{
     padding: .8rem;
     font-size: 1.1rem;
-    margin:.5rem ;
+    margin:.5rem;
     outline: none;
+    max-width: 100%;
 }
 .name-container input,
 .password-container input{
